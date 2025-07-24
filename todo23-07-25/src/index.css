@@ -1,0 +1,15 @@
+/* @import "normalize.css"; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
