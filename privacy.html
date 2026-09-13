@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeXL — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #00ff00;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: #00ff00;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p, li {
+            color: #ccc;
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: #fff;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a3a1a;
+            color: #00ff00;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-left: 0.25rem;
+        }
+        a { color: #00ff00; }
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 0.9em;
+            color: #e0e0e0;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #222;
+            margin: 2rem 0;
+        }
+        footer {
+            color: #555;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TimeXL</h1>
+        <p class="subtitle">Privacy Policy</p>
+
+        <p><strong>Last updated:</strong> September 13, 2026</p>
+
+        <p>TimeXL is a stopwatch, timer, and clock app for Android. This policy explains what data the app accesses and why.</p>
+
+        <hr>
+
+        <h2>Data Collection</h2>
+        <p>TimeXL does <strong>not</strong> collect, store, or transmit any personal data. There is no analytics, no ad tracking, and no account system. TimeXL does not request the Android <code>INTERNET</code> permission at all, so it cannot send anything anywhere &mdash; your timers, laps and settings never leave your device.</p>
+        <p>One thing is worth spelling out: the Voice Start feature hands microphone audio to your device&rsquo;s own speech recognition service, which may process it off your device. That service is part of Android, not part of TimeXL. See <strong>Microphone</strong> below.</p>
+
+        <h2>Permissions Used</h2>
+        <ul>
+            <li>
+                <strong>Microphone</strong> <span class="badge">RECORD_AUDIO</span><br>
+                Used only while the voice panel is open. You open that panel by tapping the microphone icon, and it closes by itself after a few seconds whether or not anything was heard. There is no wake word and no background listening; the microphone is inactive at all other times.
+                <br><br>
+                To turn speech into text, TimeXL passes the audio to your device&rsquo;s speech recognition service &mdash; on most Android phones this is the Google app. <strong>TimeXL itself never records, stores, or uploads the audio</strong>, and could not upload it even if it tried, having no network permission. All TimeXL receives back is a microphone level for the on-screen meter and the recognised words, which it compares against its start-word list (&ldquo;Start&rdquo;, &ldquo;Vamos&rdquo;, &ldquo;Move&rdquo;, &ldquo;Yalla&rdquo;, plus any custom word you add) and then discards.
+                <br><br>
+                Whether that service recognises the speech on your device or on its own servers is determined by the service and your device settings, not by TimeXL. For how the audio is handled once it is passed on, refer to the privacy policy of your device&rsquo;s speech recognition provider.
+            </li>
+            <li>
+                <strong>Notifications</strong> <span class="badge">POST_NOTIFICATIONS</span><br>
+                Used to show a persistent notification while a stopwatch or timer is actively running, so it keeps accurate time in the background. This notification only shows elapsed or remaining time; no other data is included.
+            </li>
+            <li>
+                <strong>Foreground Service</strong> <span class="badge">FOREGROUND_SERVICE</span><br>
+                Used to keep the stopwatch and timer running accurately when the app is in the background (e.g. while you switch to another app). This does not access any data beyond the timer itself.
+            </li>
+        </ul>
+
+        <h2>Third Parties</h2>
+        <p>TimeXL has no analytics, no advertising, and no backend of its own. Nothing is sent to the developer, and no data is sold or shared for advertising.</p>
+        <p>The one component outside TimeXL that it hands anything to is your device&rsquo;s speech recognition service, and only while the voice panel is open (see <strong>Microphone</strong>). That service ships with your device and is governed by its own provider&rsquo;s privacy policy.</p>
+
+        <h2>Children</h2>
+        <p>TimeXL does not knowingly collect data from anyone, including children, because it does not collect data at all.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this policy changes, the updated version will be posted at this same URL with a new "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>For questions about this privacy policy, open an issue on <a href="https://github.com/FaridBerlin/FaridBerlin.github.io/issues" target="_blank">GitHub</a>.</p>
+
+        <hr>
+        <footer>
+            <p>TimeXL &mdash; stopwatch, timer, and clock for Android.</p>
+        </footer>
+    </div>
+</body>
+</html>
